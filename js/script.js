@@ -16,11 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function cpfl(string) {
 
         if(!regex.test(string)) {
-
+            // if city or name consists of one word, capitalize first letter
             return string.charAt(0).toUpperCase() + string.slice(1);
 
         }
 
+        // if city (not name in this case!!!) consists of two words, also
+        // capitalize the letter after the whitespace
+            
         else  {
             let town = string.charAt(0).toUpperCase() +
                 string.slice(1, regex.lastIndex -1) + ' ' +
