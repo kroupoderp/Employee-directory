@@ -1,7 +1,69 @@
 
 
 h2 {
-  color: #add;
+  color: black;
   font-size: 2em;
+  margin-left: 1em;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
+html, body {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+.container {
+  padding: 1em .8em 4em;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.employee {
+  display: inline-block;
+  width: 28%;
+  height: 140px;
+  margin: .4em .4em;
+  background-color: #fff;
+  border: solid 1px silver;
+  border-radius: 8px;
+  min-width: 320px;
+  vertical-align: middle;
+  padding: 0 8px;
+}
+
+
+img {
+  width: 6em;
+  border-radius: 50%;
+  float: left;
+  margin-top: 22px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+h3 {
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 4px 0;
+  font-size: 15px;
+  color: darkgray;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+h3 {
+  margin: 0 0 6px 0;
+}
+
+.info {
+  text-align: left;
+  margin-top: 38.5px;
+}
