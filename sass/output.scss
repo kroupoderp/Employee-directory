@@ -21,8 +21,9 @@ html, body {
 }
 
 .employee {
+  cursor: pointer;
   display: inline-block;
-  width: 28%;
+  width: 340px;
   height: 140px;
   margin: .4em .4em;
   background-color: #fff;
@@ -31,6 +32,10 @@ html, body {
   min-width: 320px;
   vertical-align: middle;
   padding: 0 8px;
+  transition: 200ms;
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 }
 
 

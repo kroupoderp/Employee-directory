@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let email_field = document.querySelectorAll("p:first-of-type");
     let city_field = document.querySelectorAll("p:last-of-type");
 
-
-
     // cpfl - capitalize first letter
 
     let regex = /\s{1}/g;
@@ -16,14 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function cpfl(string) {
 
         if(!regex.test(string)) {
-            // if city or name consists of one word, capitalize first letter
+
             return string.charAt(0).toUpperCase() + string.slice(1);
 
         }
 
-        // if city (not name in this case!!!) consists of two words, also
-        // capitalize the letter after the whitespace
-            
         else  {
             let town = string.charAt(0).toUpperCase() +
                 string.slice(1, regex.lastIndex -1) + ' ' +
@@ -45,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     xhr.onreadystatechange = function() {
 
-        if(xhr.readyState === 4) {
+        if(xhr.readyState === 4 && xhr.status === 200) {
 
             // console.log(xhr.response);
 
@@ -74,8 +69,3 @@ document.addEventListener('DOMContentLoaded', () => {
     xhr.send()
 
 });
-
-
-
-
-
