@@ -1,0 +1,13 @@
+
+
+@mixin min() {
+  @media (min-width: 768px) {
+    @content
+  }
+}
+
+@mixin se() {
+  @media (max-width: 420px) {
+    @content
+  }
+}

@@ -1,0 +1,93 @@
+
+
+@import "helpers";
+
+.lb-outerContainer {
+  width: 280px !important;
+  height: 364px !important;
+  @include min {
+    width: 370px !important;
+    height: 480px !important;
+  }
+}
+
+.lightboxOverlay {
+  opacity: .4;
+}
+
+.lightbox .lb-image {
+  border: 2px solid silver;
+  border-radius: 50%;
+  position: absolute;
+  margin: 1.5em 0;
+  left: 74px;
+  @include min {
+    left: 119px;
+    margin: 3em 0;
+  }
+}
+
+.cont {
+  height: 250px;
+  width: 90%;
+  position: absolute;
+  left: 18.5px;
+  top: 170px;
+  @include min {
+    top: 220px;
+  }
+}
+
+.first {
+  border-bottom: solid 1px silver;
+  padding-bottom: 2px;
+  @include min {
+    padding-bottom: 1em;
+  }
+}
+
+.last {
+  padding-top: 5px;
+  @include min {
+    padding-top: 1em;
+  }
+}
+
+.first, .last {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cont p {
+  margin: 22px;
+  @include min {
+    margin: 1.7em 0;
+  }
+}
+
+.cont h3 {
+  margin-top: 10px;
+  margin-bottom: 24px;
+  @include min {
+    margin-bottom: 2em;
+  }
+}
+
+.lb-close {
+  display: none !important;
+}
+
+
+.cross {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+line {
+  stroke: black;
+}
