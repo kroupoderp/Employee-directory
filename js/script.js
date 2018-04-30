@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let addr = obj.location.street + ' ' + obj.location.postcode;
 
-            let bday = 'Birthday: ' + obj.dob.slice(0, 9);
+            let bday = 'Birthday: ' + obj.dob.slice(0, 9);  // only date is needed (first 9 characters), not the time)
 
             summary.innerHTML =
                 `
