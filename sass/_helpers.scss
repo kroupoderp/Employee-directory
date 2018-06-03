@@ -1,5 +1,6 @@
 
 
+
 @mixin min() {
   @media (min-width: 768px) {
     @content
@@ -8,6 +9,12 @@
 
 @mixin se() {
   @media (max-width: 420px) {
+    @content
+  }
+}
+
+@mixin rand($brk_point) {
+  @media (min-width: $brk_point) {
     @content
   }
 }

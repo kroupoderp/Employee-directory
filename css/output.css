@@ -1,19 +1,26 @@
 h2 {
   color: black;
   font-size: 2em;
-  margin-left: 1em;
   font-family: "Source Sans Pro", sans-serif; }
 
 html, body {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  text-align: center; }
 
 .container {
   padding: 1em .8em 4em;
-  width: 90%;
+  width: 370.8px;
   margin: 0 auto;
-  text-align: center; }
+  display: inline-block;
+  text-align: left; }
+  @media (min-width: 772px) {
+    .container {
+      width: 745.6px; } }
+  @media (min-width: 1146px) {
+    .container {
+      width: 1120.4px; } }
 
 .employee {
   display: inline-block;
@@ -43,8 +50,8 @@ img {
   border-radius: 50%;
   float: left;
   margin-top: 22px;
-  margin-left: 1em;
-  margin-right: 1em; }
+  margin-left: .5em;
+  margin-right: .8em; }
 
 h3 {
   font-weight: 900;
@@ -53,7 +60,7 @@ h3 {
 p {
   font-family: "Source Sans Pro", sans-serif;
   margin: 4px 0;
-  font-size: 15px;
+  font-size: 14px;
   color: darkgray; }
 
 p:last-of-type {
@@ -66,6 +73,24 @@ h3 {
   text-align: left;
   margin-top: 38.5px; }
 
+#employee_search {
+  display: block;
+  margin: 0 auto 34px;
+  width: 90%;
+  height: 32px;
+  border-radius: 5px;
+  border: solid 2px lightgrey;
+  padding-left: 10px;
+  color: silver;
+  font-family: "Source Sans Pro", sans-serif; }
+  @media (min-width: 600px) {
+    #employee_search {
+      width: 500px; } }
+
+/* use variables and breakpoints for controlling the width of the
+  container, set a variable equal to the entire width of an
+  employee container. Then at certain breakpoints when the amount of columns
+  change, you can adjust the width of the container div */
 .lb-outerContainer {
   width: 280px !important;
   height: 364px !important; }

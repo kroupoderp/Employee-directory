@@ -2,6 +2,26 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    let render = document.getElementsByClassName('container')[0];
+    let container = '';
+
+    for(let y = 1; y <= 30; y++) {
+
+        container += `
+            <a href="" data-lightbox="image-${y}">
+                <div class="employee">
+                    <img src="" alt="avatar">
+                    <div class="info">
+                        <h3></h3>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </a>
+            `
+    }
+
+    render.innerHTML = container;
 
     lightbox.option({
         alwaysShowNavOnTouchDevices: true,
@@ -16,6 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let name_field = document.querySelectorAll("h3");
     let email_field = document.querySelectorAll("p:first-of-type");
     let city_field = document.querySelectorAll("p:last-of-type");
+    let $search = $('input');
+    let $names = $('h3');
+
 
     // cpfl - capitalize first letter
 
@@ -43,12 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // AJAX request
-
     let xhr = new XMLHttpRequest();
 
-    xhr.open('GET', "https://randomuser.me/api/?results=12&nat=us", true);
-
-
+    xhr.open('GET', "https://randomuser.me/api/?results=30&nat=us", true);
 
     let data;
 
@@ -145,4 +165,29 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+
+    $search.on('keyup', function()  {
+
+        let $user_input = $(this).val().toLowerCase();
+
+        $names.each(function () {
+
+            let $full_name = $(this).text().toLowerCase();
+
+            if ($user_input.length === 0) {
+                $(this).parent().parent().css("display", "inline-block");
+            }
+
+            else    {
+                $(this).parent().parent().css("display", "none");
+            }
+
+            if ($full_name.indexOf($user_input) !== -1) {
+
+                $(this).parent().parent().css("display", "inline-block");
+            }
+
+        });
+    })
 });
