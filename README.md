@@ -1,6 +1,6 @@
 # Employee directory
 
-Every single time the page reloads, a new AJAX request will be made to ramdomuser.me and new random employee information will get displayed. I used JavaScript to generate the div containers with the required markup to hold the employee information. I implemented the jQuery Lightbox plugin - whenever a user clicks on a employee, additional information will be displayed about them inside a Lightbox window. I also added a search bar, which allows a user to filter employees by first and last name. 
+Every single time the page reloads, a new AJAX request will be made to randomuser.me and new random employee information will get displayed. I used JavaScript to generate the div containers with the required markup to hold the employee information. I implemented the jQuery Lightbox plugin - whenever a user clicks on a employee, additional information will be displayed about them inside a Lightbox window. I also added a search bar, which allows a user to filter employees by first and last name. 
 
 
 <img width="1280" alt="img-1" src="https://user-images.githubusercontent.com/23324252/40887626-8d16dc9c-6719-11e8-9c17-efb8148e093d.png">

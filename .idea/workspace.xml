@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f778057-e843-40e7-93b1-356bda503ad0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.sass-cache/af1f40acc586301f58d3dae6b19004f9f1018e17/_helpers.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/af1f40acc586301f58d3dae6b19004f9f1018e17/_helpers.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/af1f40acc586301f58d3dae6b19004f9f1018e17/_lightbox_styles.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/af1f40acc586301f58d3dae6b19004f9f1018e17/_lightbox_styles.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/af1f40acc586301f58d3dae6b19004f9f1018e17/_page.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/af1f40acc586301f58d3dae6b19004f9f1018e17/_page.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/output.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/output.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/output.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_helpers.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_page.scss" afterDir="false" />
-    </list>
+    <list default="true" id="4f778057-e843-40e7-93b1-356bda503ad0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -181,12 +171,12 @@
       <workItem from="1526133641203" duration="2807000" />
       <workItem from="1526161939939" duration="296000" />
       <workItem from="1528033490624" duration="1099000" />
-      <workItem from="1528035123569" duration="395000" />
+      <workItem from="1528035123569" duration="727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60808000" />
+    <option name="totallyTimeSpent" value="61140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
