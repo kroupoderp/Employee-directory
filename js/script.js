@@ -187,7 +187,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 $(this).parent().parent().css("display", "inline-block");
             }
-
         });
     })
 });
