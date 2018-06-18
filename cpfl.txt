@@ -1,0 +1,22 @@
+Previous code for capitalizing every first letter:
+
+    let regex = /\s{1}/g;
+
+    function cpfl(string) {
+
+        if(!regex.test(string)) {
+
+            return string.charAt(0).toUpperCase() + string.slice(1);
+
+        }
+
+        else  {
+
+            let town = string.charAt(0).toUpperCase() +
+                string.slice(1, regex.lastIndex -1) + ' ' +
+                string.charAt(regex.lastIndex).toUpperCase() +
+                string.slice(regex.lastIndex + 1);
+
+            return town;
+        }
+    }

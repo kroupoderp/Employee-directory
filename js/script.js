@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     render.innerHTML = container;
 
+
     lightbox.option({
         alwaysShowNavOnTouchDevices: true,
         'resizeDuration': 200,
@@ -42,26 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // cpfl - capitalize first letter
 
-    let regex = /\s{1}/g;
+    function cpfl(str) {
 
-    function cpfl(string) {
+        let array = str.toLowerCase().split(" ");
 
-        if(!regex.test(string)) {
-
-            return string.charAt(0).toUpperCase() + string.slice(1);
-
+        for (let i = 0; i < array.length; i++) {
+           array[i] = array[i].charAt(0).toUpperCase() + array[i].slice(1);
         }
 
-        else  {
+        let titleCaseStr = array.join(" ");
 
-            let town = string.charAt(0).toUpperCase() +
-                string.slice(1, regex.lastIndex -1) + ' ' +
-                string.charAt(regex.lastIndex).toUpperCase() +
-                string.slice(regex.lastIndex + 1);
-
-            return town;
-
-        }
+        return titleCaseStr;
     }
 
 
@@ -139,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let addr = obj.location.street + ' ' + obj.location.postcode;
 
-            let bday = 'Birthday: ' + obj.dob.slice(0, 9);  // only date is needed (first 9 characters), not the time)
+            let bday = 'Birthday: ' + obj.dob.date.slice(0, 9);  // only date is needed (first 9 characters), not the time)
 
             summary.innerHTML =
                 `
